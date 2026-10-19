@@ -222,5 +222,3 @@ AWS_LIVE_TEST=1 AWS_LOCATION_API_KEY=v1.public... AWS_LOCATION_REGION=eu-north-1
   flutter test test/live_api_test.dart         # every Maps/Places/Routes call against AWS
 cd example && flutter test                     # app, l10n and RTL tests
 ```
-#   a w s _ l o c a t i o n _ s e r v i c e _ f e a t u r e s _ p l u g i n  
- 
