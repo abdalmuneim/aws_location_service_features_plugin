@@ -22,7 +22,7 @@ The [example app](example/) ("Location Studio") uses every feature.
 
 ```yaml
 dependencies:
-  aws_location_service_features: ^0.1.0   # or a git dependency
+  aws_location_service_features: ^0.2.0   # or a git dependency
 ```
 
 ### Android
