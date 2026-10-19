@@ -6,6 +6,7 @@ import 'package:http/http.dart' as http;
 
 import '../config/aws_location_config.dart';
 import '../error/exceptions.dart';
+import '../utils/debuger.dart';
 import '../utils/json_utils.dart';
 
 /// The three Amazon Location v2 service endpoints reachable with an API key.
@@ -54,11 +55,13 @@ class AwsLocationHttpClient {
       }
     });
     params['key'] = _config.apiKey;
-    return Uri.https(
+    final uri = Uri.https(
       '${service.host}.geo.${_config.region}.amazonaws.com',
       '/v2$path',
       params,
     );
+    Debuger.log("🔗 AWS request: ${uri.toString()}");
+    return uri;
   }
 
   Future<Map<String, dynamic>> postJson(
@@ -91,6 +94,7 @@ class AwsLocationHttpClient {
 
   Future<Uint8List> getBytes(Uri uri) async {
     final response = await _send(() => _http.get(uri));
+    Debuger.log("🔍 AWS response body: ${response.body}");
     return response.bodyBytes;
   }
 
@@ -119,10 +123,14 @@ class AwsLocationHttpClient {
     if (response.statusCode < 200 || response.statusCode >= 300) {
       throw _toServerException(response);
     }
+    Debuger.log(
+      "🔍 AWS response: ${response.statusCode} ${response.request?.url.path}",
+    );
     return response;
   }
 
   Map<String, dynamic> _decodeJson(http.Response response) {
+    Debuger.log("🔍 AWS response body: ${response.body}");
     if (response.bodyBytes.isEmpty) return const {};
     final decoded = jsonDecode(utf8.decode(response.bodyBytes));
     return decoded is Map<String, dynamic> ? decoded : {'value': decoded};
@@ -149,12 +157,12 @@ class AwsLocationHttpClient {
     }
     final message =
         serverMessage ?? 'Request failed with HTTP ${response.statusCode}.';
-    if (kDebugMode) {
-      debugPrint(
-        'AWS ${response.statusCode} ${response.request?.url.path}: '
-        '$message',
-      );
-    }
+
+    Debuger.error(
+      '❎ AWS ${response.statusCode} ${response.request?.url.path}: '
+      '$message',
+    );
+
     return ServerException(
       statusCode: response.statusCode,
       message: message,

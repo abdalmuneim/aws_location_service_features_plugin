@@ -1,4 +1,4 @@
-## 0.1.0
+## 0.2.0
 
 * First version, extracted from the Location Studio app (now `example/`).
 * Maps, Places and Routes (v2) over REST with an API key on Android, iOS and the web.

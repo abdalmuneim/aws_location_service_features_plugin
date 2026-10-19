@@ -2,7 +2,7 @@ name: aws_location_service_features
 description: >-
   Amazon Location Service for Flutter: maps, places, routes, geofencing and
   device tracking (Amazon Location Mobile SDKs on Android and iOS, Dart on web).
-version: 0.1.0
+version: 0.2.0
 repository: https://github.com/abdalmuneim/aws_location_service_features_plugin
 issue_tracker: https://github.com/abdalmuneim/aws_location_service_features_plugin/issues
 
