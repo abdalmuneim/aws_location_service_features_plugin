@@ -1,0 +1,1526 @@
+{
+  "@@locale": "en",
+  "appTitle": "Location Studio",
+  "@appTitle": {
+    "description": "App name, shown in the app bar, task switcher and browser tab."
+  },
+  "commonLanguage": "Language",
+  "@commonLanguage": {
+    "description": "Tooltip of the app bar button that switches the app language."
+  },
+  "settingsAppLanguage": "App language",
+  "settingsAppLanguageDevice": "Device language",
+  "@settingsAppLanguageDevice": {
+    "description": "Language option that follows the device language (English when the device language is not supported)."
+  },
+  "commonRetry": "Retry",
+  "commonCopy": "Copy",
+  "commonRawResponse": "Raw response",
+  "@commonRawResponse": {
+    "description": "Title of the collapsible panel showing the raw JSON returned by the API."
+  },
+  "commonApiResponse": "{api} response",
+  "@commonApiResponse": {
+    "description": "Title of the raw JSON panel for one API operation, e.g. 'CalculateRoutes response'. {api} is an AWS operation name and is never translated.",
+    "placeholders": {
+      "api": {
+        "type": "String",
+        "example": "CalculateRoutes"
+      }
+    }
+  },
+  "errorRequestTimedOut": "The request timed out.",
+  "errorNetwork": "Network error: {detail}",
+  "@errorNetwork": {
+    "description": "{detail} is a technical error text from the system, in English.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorHttpStatus": "Request failed with HTTP {status}.",
+  "@errorHttpStatus": {
+    "placeholders": {
+      "status": {
+        "type": "int",
+        "example": "500"
+      }
+    }
+  },
+  "errorApiKeyRejected": "The API key was rejected ({status}): {detail} Check the key, its region and its allowed actions in Settings.",
+  "@errorApiKeyRejected": {
+    "description": "{status} is the HTTP status (401/403); {detail} is the English message returned by AWS.",
+    "placeholders": {
+      "status": {
+        "type": "int",
+        "example": "403"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorNotFound": "Not found: {detail}",
+  "@errorNotFound": {
+    "description": "{detail} is the English message returned by AWS.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorTooManyRequests": "Too many requests. Wait a moment and try again.",
+  "errorLocationServicesOff": "Location services are turned off on this device.",
+  "errorLocationPermissionDenied": "Location permission denied.",
+  "errorLocationPermissionDeniedForever": "Location permission is permanently denied. Enable it in system settings.",
+  "errorSettingsNotSaved": "Could not save settings.",
+  "errorAppLanguageNotSaved": "Could not save the app language.",
+  "errorGeofencesNotRead": "Saved geofences could not be read.",
+  "errorGeofencesNotSaved": "Could not save geofences.",
+  "errorGeocodeAddressRequired": "Enter an address to geocode.",
+  "errorSearchQueryRequired": "Enter something to search for.",
+  "errorGeofenceNameRequired": "Give the geofence a name.",
+  "errorGeofencePolygonTooFewPoints": "A polygon needs at least 3 points.",
+  "errorGeofenceRadiusNotPositive": "The radius must be positive.",
+  "errorIsolineThresholdRequired": "Choose at least one threshold.",
+  "@errorIsolineThresholdRequired": {
+    "description": "A threshold is a travel-time or distance limit that defines one reachable area (isoline)."
+  },
+  "errorIsolineTooManyThresholds": "{max, plural, =1{At most 1 threshold is allowed.} other{At most {max} thresholds are allowed.}}",
+  "@errorIsolineTooManyThresholds": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "errorRouteSameOriginAndDestination": "Origin and destination are the same place.",
+  "errorRouteTooManyStops": "{max, plural, =1{A route can have at most 1 stop.} other{A route can have at most {max} stops.}}",
+  "@errorRouteTooManyStops": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "errorMatrixPointsRequired": "Add at least one origin and one destination.",
+  "errorMatrixTooManyPoints": "{max, plural, =1{Use at most 1 origin and 1 destination.} other{Use at most {max} origins and {max} destinations.}}",
+  "@errorMatrixTooManyPoints": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "errorOptimizeStopsRequired": "Add at least one stop besides the start.",
+  "errorOptimizeTooManyStops": "{max, plural, =1{At most 1 stop can be optimized.} other{At most {max} stops can be optimized.}}",
+  "@errorOptimizeTooManyStops": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "errorSnapTooFewPoints": "A trace needs at least 2 points.",
+  "@errorSnapTooFewPoints": {
+    "description": "A trace is a recorded GPS track to be matched to roads."
+  },
+  "errorSnapTooManyPoints": "{max, plural, =1{A trace can have at most 1 point.} other{A trace can have at most {max} points.}}",
+  "@errorSnapTooManyPoints": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "errorSnapNoRoute": "No route between those points.",
+  "errorTrackerPickTripEnds": "Tap the map twice to choose where the simulated trip starts and ends.",
+  "errorTrackerNoRoute": "No route found for the simulated trip.",
+  "commonApiKey": "API key",
+  "settingsTitle": "Settings",
+  "mapExplorerTitle": "Map explorer",
+  "staticMapTitle": "Static maps",
+  "searchTitle": "Search places",
+  "nearbyTitle": "Nearby search",
+  "geocodeTitle": "Geocoding",
+  "directionsTitle": "Directions",
+  "isolinesTitle": "Isolines",
+  "@isolinesTitle": {
+    "description": "Areas reachable within a given travel time or distance from a point."
+  },
+  "routeMatrixTitle": "Route matrix",
+  "@routeMatrixTitle": {
+    "description": "A table of travel times and distances between several origins and destinations."
+  },
+  "optimizeTitle": "Optimize stops",
+  "@optimizeTitle": {
+    "description": "Finds the best order in which to visit a set of stops."
+  },
+  "snapTitle": "Snap to roads",
+  "@snapTitle": {
+    "description": "Matches a recorded GPS trace to the road network."
+  },
+  "geofencesTitle": "Geofences",
+  "@geofencesTitle": {
+    "description": "Virtual boundaries on the map; the app reports when a device enters or exits them."
+  },
+  "trackerTitle": "Tracker",
+  "@trackerTitle": {
+    "description": "Screen that follows the device's live or simulated position."
+  },
+  "homeHeroSubtitle": "Maps, Places and Routes through a single API key.",
+  "homeSectionMaps": "Maps",
+  "homeSectionPlaces": "Places",
+  "homeSectionRoutes": "Routes",
+  "homeSectionGeofencing": "Geofencing & tracking",
+  "homeMapExplorerDescription": "Standard, Monochrome, Hybrid & Satellite styles, dark mode, political views, terrain, contours, traffic and travel-mode layers.",
+  "homeStaticMapDescription": "Render map images with markers, lines, labels and scale bars.",
+  "homeSearchTitle": "Search",
+  "homeSearchDescription": "Find businesses, POIs and addresses with type-ahead and details.",
+  "homeNearbyTitle": "Nearby",
+  "homeNearbyDescription": "Points of interest around a location, filtered by category.",
+  "homeGeocodeTitle": "Geocode",
+  "@homeGeocodeTitle": {
+    "description": "Converting an address into map coordinates."
+  },
+  "homeGeocodeDescription": "Turn free-text or structured addresses into coordinates.",
+  "homeReverseGeocodeTitle": "Reverse geocode",
+  "@homeReverseGeocodeTitle": {
+    "description": "Converting map coordinates into an address."
+  },
+  "homeReverseGeocodeDescription": "Turn coordinates into addresses, streets and localities.",
+  "homeDirectionsDescription": "Car, walking, scooter & truck routes with stops, alternatives, avoidances, traffic and departure times.",
+  "homeIsolinesDescription": "Areas reachable within a travel time or distance.",
+  "homeRouteMatrixDescription": "Travel time & distance between many origins and destinations.",
+  "homeOptimizeDescription": "The best order to visit a set of stops.",
+  "homeSnapDescription": "Match noisy GPS traces to the road network.",
+  "homeGeofencesApis": "On-device evaluation",
+  "@homeGeofencesApis": {
+    "description": "Shown where other cards list AWS API names: geofences are checked on the phone, not by an AWS API."
+  },
+  "homeGeofencesDescription": "Draw circle & polygon geofences or build them from isolines.",
+  "homeTrackerDescription": "Live or simulated tracking with ENTER/EXIT geofence events.",
+  "commonOk": "OK",
+  "commonDefault": "Default",
+  "commonOff": "Off",
+  "commonLight": "Light",
+  "@commonLight": {
+    "description": "Light color scheme (app theme or map colors)."
+  },
+  "commonDark": "Dark",
+  "@commonDark": {
+    "description": "Dark color scheme (app theme or map colors)."
+  },
+  "commonPoliticalView": "Political view",
+  "@commonPoliticalView": {
+    "description": "Which country's official position is used to draw disputed borders and names on maps."
+  },
+  "unitsMetric": "Metric",
+  "unitsImperial": "Imperial",
+  "mapStyleTitle": "Map style",
+  "mapStyleStandard": "Standard",
+  "mapStyleMonochrome": "Monochrome",
+  "mapStyleHybrid": "Hybrid",
+  "@mapStyleHybrid": {
+    "description": "Map style: satellite imagery with roads and labels on top."
+  },
+  "mapStyleSatellite": "Satellite",
+  "mapTerrainHillshade": "Hillshade",
+  "@mapTerrainHillshade": {
+    "description": "Map layer that shades the terrain to show relief."
+  },
+  "mapTerrain3d": "3D terrain",
+  "mapContoursLow": "Low",
+  "@mapContoursLow": {
+    "description": "Density of elevation contour lines on the map."
+  },
+  "mapContoursMedium": "Medium",
+  "@mapContoursMedium": {
+    "description": "Density of elevation contour lines on the map."
+  },
+  "mapContoursHigh": "High",
+  "@mapContoursHigh": {
+    "description": "Density of elevation contour lines on the map."
+  },
+  "mapTravelModesTransit": "Transit",
+  "@mapTravelModesTransit": {
+    "description": "Map overlay showing public transport lines."
+  },
+  "mapTravelModesTruck": "Truck",
+  "@mapTravelModesTruck": {
+    "description": "Map overlay showing truck restrictions."
+  },
+  "countryArgentina": "Argentina",
+  "countryCyprus": "Cyprus",
+  "countryEgypt": "Egypt",
+  "countryGeorgia": "Georgia",
+  "@countryGeorgia": {
+    "description": "The country in the Caucasus."
+  },
+  "countryGreece": "Greece",
+  "countryIndia": "India",
+  "countryKenya": "Kenya",
+  "countryMorocco": "Morocco",
+  "countryPalestine": "Palestine",
+  "countryRussia": "Russia",
+  "countrySudan": "Sudan",
+  "countrySerbia": "Serbia",
+  "countrySuriname": "Suriname",
+  "countrySyria": "Syria",
+  "countryTurkey": "Turkey",
+  "countryTanzania": "Tanzania",
+  "countryUruguay": "Uruguay",
+  "countryVietnam": "Vietnam",
+  "settingsSectionConnection": "Connection",
+  "settingsSaveKey": "Save key",
+  "settingsRegion": "Region",
+  "@settingsRegion": {
+    "description": "AWS region, e.g. eu-north-1."
+  },
+  "settingsRegionHelper": "Must be the region the API key was created in",
+  "settingsTestConnection": "Test connection",
+  "settingsTestSuccess": "Connected. Places API answered: {answer}",
+  "@settingsTestSuccess": {
+    "description": "{answer} is an address returned by the API (or 'OK').",
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsSectionResults": "Results",
+  "settingsResultsLanguage": "Language for places & directions",
+  "@settingsResultsLanguage": {
+    "description": "Language requested from AWS for place names and route instructions; separate from the app language."
+  },
+  "settingsUnits": "Units",
+  "settingsSectionAppearance": "Appearance",
+  "settingsThemeSystem": "System",
+  "@settingsThemeSystem": {
+    "description": "Theme option: follow the device's light/dark setting."
+  },
+  "settingsResetDefaults": "Reset to defaults",
+  "settingsAboutApiKeysTitle": "About API keys",
+  "settingsAboutApiKeysBody": "Amazon Location API keys authorize the Maps, Places and Routes APIs. Restrict the key to the actions you use and to your app's referrers/bundle IDs in the AWS console. Geofence collections and trackers require IAM or Cognito credentials.",
+  "commonMyLocation": "My location",
+  "commonDetails": "Details",
+  "commonResults": "Results",
+  "commonPick": "Pick",
+  "@commonPick": {
+    "description": "Button that opens a map to choose a location."
+  },
+  "commonAdd": "Add",
+  "mapExplorerCamera": "z {zoom} · {center}",
+  "@mapExplorerCamera": {
+    "description": "Map camera readout: z = zoom level, then the center coordinates.",
+    "placeholders": {
+      "zoom": {
+        "type": "String",
+        "example": "12.5"
+      },
+      "center": {
+        "type": "String",
+        "example": "30.0444, 31.2357"
+      }
+    }
+  },
+  "mapExplorerSearchHint": "Search places, businesses, addresses",
+  "mapExplorerLookingUpAddress": "Looking up address…",
+  "mapExplorerNoAddress": "No address found",
+  "mapExplorerTapHint": "Tap anywhere to see the address (reverse geocoding)",
+  "mapStyleColorScheme": "Color scheme",
+  "mapStylePoliticalViewHelper": "Borders and labels for disputed areas",
+  "mapStyleNotForSatellite": "Not available for the Satellite style",
+  "mapStyleTerrain": "Terrain",
+  "mapStyleTerrain3dHint": "3D terrain renders on the web; tilt the map with right-drag or two fingers.",
+  "mapStyleContours": "Contour lines",
+  "mapStyleNotAvailable": "n/a",
+  "@mapStyleNotAvailable": {
+    "description": "Short 'not available' marker next to a section title."
+  },
+  "mapStyleTraffic": "Real-time traffic",
+  "mapStyleTravelModes": "Travel-mode overlay",
+  "staticMapRender": "Render",
+  "@staticMapRender": {
+    "description": "Button that requests the static map image."
+  },
+  "staticMapImageSize": "{size} KB",
+  "@staticMapImageSize": {
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "84"
+      }
+    }
+  },
+  "staticMapRequestUrl": "Request URL",
+  "staticMapEmpty": "Press Render to generate an image.",
+  "staticMapFraming": "Framing",
+  "@staticMapFraming": {
+    "description": "How the area shown in the image is chosen."
+  },
+  "staticMapFramingCenterZoom": "Center & zoom",
+  "staticMapFramingCenterRadius": "Center & radius",
+  "staticMapFramingFitMarkers": "Fit markers",
+  "@staticMapFramingFitMarkers": {
+    "description": "Frame the image so that all markers are visible."
+  },
+  "staticMapCenter": "Center",
+  "staticMapPickCenter": "Map center",
+  "staticMapZoom": "Zoom {zoom}",
+  "@staticMapZoom": {
+    "placeholders": {
+      "zoom": {
+        "type": "String",
+        "example": "12.0"
+      }
+    }
+  },
+  "staticMapRadius": "Radius {meters} m",
+  "@staticMapRadius": {
+    "placeholders": {
+      "meters": {
+        "type": "String",
+        "example": "2000"
+      }
+    }
+  },
+  "staticMapPadding": "Padding {pixels} px",
+  "@staticMapPadding": {
+    "description": "Empty space around the markers, in pixels.",
+    "placeholders": {
+      "pixels": {
+        "type": "String",
+        "example": "40"
+      }
+    }
+  },
+  "staticMapImage": "Image",
+  "staticMapSize": "Size",
+  "staticMapHighDpi": "High DPI (@2x)",
+  "staticMapStyle": "Style",
+  "staticMapLabelsSmall": "Small labels",
+  "staticMapLabelsLarge": "Large labels",
+  "staticMapLabelLanguage": "Label language",
+  "staticMapLabelLanguageLocal": "Local",
+  "@staticMapLabelLanguageLocal": {
+    "description": "Show each place's name in its local language."
+  },
+  "staticMapPointsOfInterest": "Points of interest",
+  "staticMapCropLabels": "Crop labels at the edges",
+  "staticMapScaleBar": "Scale bar",
+  "staticMapScaleKilometers": "Kilometers",
+  "staticMapScaleMiles": "Miles",
+  "staticMapScaleKilometersMiles": "Km + Miles",
+  "staticMapScaleMilesKilometers": "Miles + Km",
+  "staticMapMarkers": "GeoJSON overlay markers",
+  "staticMapAddMarker": "Add marker",
+  "staticMapMarkersHint": "Markers are drawn with the geojson-overlay parameter.",
+  "@staticMapMarkersHint": {
+    "description": "geojson-overlay is an API parameter name and is not translated."
+  },
+  "staticMapMarkerFallback": "Marker {number}",
+  "@staticMapMarkerFallback": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "staticMapConnectMarkers": "Connect markers with a line",
+  "commonDistance": "Distance",
+  "commonLoadMore": "Load more",
+  "commonClear": "Clear",
+  "commonRadius": "Radius {distance}",
+  "@commonRadius": {
+    "placeholders": {
+      "distance": {
+        "type": "String",
+        "example": "1.5 km"
+      }
+    }
+  },
+  "commonResultsCount": "{count, plural, =1{1 result} other{{count} results}}",
+  "@commonResultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "placeActionNearby": "Nearby",
+  "@placeActionNearby": {
+    "description": "Button: search for places around this place."
+  },
+  "placeActionReachableArea": "Reachable area",
+  "@placeActionReachableArea": {
+    "description": "Button: show the area reachable from this place within a travel time."
+  },
+  "placeCopyCoordinates": "Copy coordinates",
+  "placeCoordinatesCopied": "Coordinates copied",
+  "placeAddress": "Address",
+  "placeLocation": "Location",
+  "placeCoordinates": "Coordinates",
+  "placeTimeZone": "Time zone",
+  "placeAccessPoints": "Access points",
+  "@placeAccessPoints": {
+    "description": "Entrances or points where a place can be reached from the road."
+  },
+  "placeContact": "Contact",
+  "placePhone": "Phone",
+  "placeWebsite": "Website",
+  "placeEmail": "Email",
+  "placeFax": "Fax",
+  "placeOpeningHours": "Opening hours",
+  "placeOpenNow": "Open now",
+  "placeClosed": "Closed",
+  "placeBusinessChain": "Business chain",
+  "placeNoCoordinates": "This place has no coordinates.",
+  "placeSearchHint": "Search places or addresses",
+  "placeSearchMoveMap": "Move the map to search nearby.",
+  "placeSearchNoMatches": "No matches",
+  "placeSearchQueryGeneric": "Search query",
+  "@placeSearchQueryGeneric": {
+    "description": "Subtitle of a suggested search phrase: tapping it runs that search."
+  },
+  "placeSearchQueryCategory": "Search category",
+  "@placeSearchQueryCategory": {
+    "description": "Subtitle of a suggestion that searches a whole category (e.g. 'coffee shops')."
+  },
+  "placeSearchQueryBusinessChain": "Search business chain",
+  "placeSearchQueryOther": "Search {type}",
+  "@placeSearchQueryOther": {
+    "description": "{type} is an English API value (fallback for unknown suggestion types).",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "placeTypePointOfInterest": "Point of interest",
+  "placeTypePointAddress": "Point address",
+  "@placeTypePointAddress": {
+    "description": "An exact street address (a specific building)."
+  },
+  "placeTypeInterpolatedAddress": "Interpolated address",
+  "@placeTypeInterpolatedAddress": {
+    "description": "An estimated address position along a street."
+  },
+  "placeTypeSecondaryAddress": "Secondary address",
+  "@placeTypeSecondaryAddress": {
+    "description": "A unit within a building, e.g. an apartment or suite."
+  },
+  "placeTypeStreet": "Street",
+  "placeTypeIntersection": "Intersection",
+  "placeTypeBlock": "Block",
+  "placeTypeSubBlock": "Sub block",
+  "placeTypeDistrict": "District",
+  "placeTypeSubDistrict": "Sub district",
+  "placeTypeLocality": "Locality",
+  "@placeTypeLocality": {
+    "description": "A city or town."
+  },
+  "placeTypeSubRegion": "Sub region",
+  "placeTypeRegion": "Region",
+  "@placeTypeRegion": {
+    "description": "A state, province or governorate."
+  },
+  "placeTypePostalCode": "Postal code",
+  "placeTypeCountry": "Country",
+  "placeTypePoint": "Point",
+  "addressBuilding": "Building",
+  "addressNumber": "Number",
+  "@addressNumber": {
+    "description": "House or building number in a street address."
+  },
+  "addressStreet": "Street",
+  "addressSubDistrict": "Sub-district",
+  "addressDistrict": "District",
+  "addressLocality": "Locality",
+  "@addressLocality": {
+    "description": "City or town in a postal address."
+  },
+  "addressSubRegion": "Sub-region",
+  "addressRegion": "Region",
+  "@addressRegion": {
+    "description": "State, province or governorate in a postal address (not an AWS region)."
+  },
+  "addressPostalCode": "Postal code",
+  "addressCountry": "Country",
+  "nearbyTapHint": "Tap the map to search around that point",
+  "nearbyCategories": "Categories",
+  "nearbyPlacesCount": "{count, plural, =1{1 place} other{{count} places}}",
+  "@nearbyPlacesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "nearbyEmpty": "Nothing found. Try a larger radius.",
+  "nearbyCategoryRestaurants": "Restaurants",
+  "nearbyCategoryCoffee": "Coffee",
+  "@nearbyCategoryCoffee": {
+    "description": "Filter chip for coffee shops."
+  },
+  "nearbyCategoryFastFood": "Fast food",
+  "nearbyCategoryHotels": "Hotels",
+  "nearbyCategoryGroceries": "Groceries",
+  "nearbyCategoryMalls": "Malls",
+  "nearbyCategoryPharmacies": "Pharmacies",
+  "nearbyCategoryHospitals": "Hospitals",
+  "nearbyCategoryAtms": "ATMs",
+  "nearbyCategoryBanks": "Banks",
+  "nearbyCategoryFuel": "Fuel",
+  "@nearbyCategoryFuel": {
+    "description": "Filter chip for petrol/gas stations."
+  },
+  "nearbyCategoryParking": "Parking",
+  "nearbyCategoryAttractions": "Attractions",
+  "nearbyCategoryMuseums": "Museums",
+  "nearbyCategoryParks": "Parks",
+  "nearbyCategoryGyms": "Gyms",
+  "nearbyCategoryMosques": "Mosques",
+  "nearbyCategorySchools": "Schools",
+  "nearbyCategoryUniversities": "Universities",
+  "nearbyCategoryCinemas": "Cinemas",
+  "nearbyCategoryPolice": "Police",
+  "nearbyCategoryTrains": "Trains",
+  "@nearbyCategoryTrains": {
+    "description": "Filter chip for train stations."
+  },
+  "nearbyCategoryBuses": "Buses",
+  "@nearbyCategoryBuses": {
+    "description": "Filter chip for bus stations."
+  },
+  "nearbyCategoryAirports": "Airports",
+  "searchBiasHint": "Results are biased to the map center",
+  "searchModeSearchText": "Search text",
+  "@searchModeSearchText": {
+    "description": "Search mode: full text search with paged results."
+  },
+  "searchModeSuggest": "Suggest",
+  "searchModeAutocomplete": "Autocomplete",
+  "searchModeSearchTextDescription": "Businesses, POIs and addresses, paged",
+  "searchModeSuggestDescription": "Places plus query refinements as you type",
+  "searchModeAutocompleteDescription": "Fast address completion as you type",
+  "searchHint": "e.g. pizza, Tahrir Square, 26th of July St",
+  "@searchHint": {
+    "description": "Example search terms; use well-known local examples."
+  },
+  "searchCountryHint": "Country filter (ISO-3, e.g. EGY)",
+  "searchOnlyInCircle": "Only inside a circle around the map center",
+  "searchCompletionsCount": "{count, plural, =1{1 completion} other{{count} completions}}",
+  "@searchCompletionsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchSuggestionsCount": "{count, plural, =1{1 suggestion} other{{count} suggestions}}",
+  "@searchSuggestionsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchQueryRefinement": "Query refinement · tap to search",
+  "searchNoResults": "No results for \"{query}\".",
+  "@searchNoResults": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchTypeQuery": "Type a query to search with {mode}.",
+  "@searchTypeQuery": {
+    "description": "{mode} is the selected search mode name, e.g. 'Autocomplete'.",
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "pickerTitle": "Choose a location",
+  "pickerEmptyHint": "Tap the map or search for a place",
+  "pickerUse": "Use",
+  "@pickerUse": {
+    "description": "Confirms the picked location."
+  },
+  "geocodeReverseTapHint": "Tap the map to reverse geocode",
+  "geocodeModeText": "Free text",
+  "geocodeModeStructured": "Structured",
+  "@geocodeModeStructured": {
+    "description": "Geocoding mode: enter the address field by field."
+  },
+  "geocodeModeReverse": "Reverse",
+  "@geocodeModeReverse": {
+    "description": "Geocoding mode: coordinates to address."
+  },
+  "geocodeTextHint": "e.g. 15 Talaat Harb, Cairo",
+  "geocodeCountryField": "Country (ISO-3)",
+  "geocodeSearchRadius": "Search radius {distance}",
+  "@geocodeSearchRadius": {
+    "placeholders": {
+      "distance": {
+        "type": "String",
+        "example": "200 m"
+      }
+    }
+  },
+  "geocodeQueryPosition": "Query position: {position}",
+  "@geocodeQueryPosition": {
+    "placeholders": {
+      "position": {
+        "type": "String",
+        "example": "30.044400, 31.235700"
+      }
+    }
+  },
+  "geocodeMaxResults": "Max results: {count}",
+  "@geocodeMaxResults": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "geocodePlaceTypes": "Place types",
+  "geocodeAction": "Geocode",
+  "@geocodeAction": {
+    "description": "Button: convert the entered address into coordinates."
+  },
+  "commonChange": "Change",
+  "commonSearch": "Search",
+  "commonUndo": "Undo",
+  "commonPointsCount": "{count, plural, =1{1 point} other{{count} points}}",
+  "@commonPointsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "travelModeCar": "Car",
+  "travelModeWalk": "Walk",
+  "travelModeScooter": "Scooter",
+  "travelModeTruck": "Truck",
+  "routeFastest": "Fastest",
+  "routeShortest": "Shortest",
+  "truckTypeStraight": "Straight truck",
+  "@truckTypeStraight": {
+    "description": "A rigid truck (cab and cargo on one chassis)."
+  },
+  "truckTypeTractor": "Tractor",
+  "@truckTypeTractor": {
+    "description": "A tractor unit that pulls a semi-trailer."
+  },
+  "truckTypeLight": "Light truck",
+  "avoidTolls": "Tolls",
+  "avoidFerries": "Ferries",
+  "avoidHighways": "Highways",
+  "avoidTunnels": "Tunnels",
+  "avoidUTurns": "U-turns",
+  "avoidDirtRoads": "Dirt roads",
+  "avoidCarTrains": "Car trains",
+  "@avoidCarTrains": {
+    "description": "Trains that carry cars (car shuttle trains)."
+  },
+  "routeTapStart": "Tap the map to set the start",
+  "routeStart": "Start",
+  "@routeStart": {
+    "description": "Starting point of a route."
+  },
+  "routeStop": "Stop",
+  "@routeStop": {
+    "description": "An intermediate stop on a route (noun)."
+  },
+  "routeDestination": "Destination",
+  "routeAddStop": "Add stop",
+  "routeAvoid": "Avoid",
+  "directionsTapDestination": "Tap the map to set the destination",
+  "directionsChooseStart": "Choose start",
+  "directionsChooseDestination": "Choose destination",
+  "directionsSwap": "Swap",
+  "@directionsSwap": {
+    "description": "Tooltip: swap the start and the destination."
+  },
+  "directionsRoutesCount": "{count, plural, =1{1 route} other{{count} routes}}",
+  "@directionsRoutesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "directionsTurnByTurn": "{count, plural, =1{Turn-by-turn · 1 step} other{Turn-by-turn · {count} steps}}",
+  "@directionsTurnByTurn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "directionsRouteOptions": "Route options",
+  "directionsSummaryAvoid": "avoid {count}",
+  "@directionsSummaryAvoid": {
+    "description": "Part of a compact options summary: number of road features avoided.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "directionsSummaryDepartNow": "depart now",
+  "@directionsSummaryDepartNow": {
+    "description": "Part of a compact options summary (lowercase in English)."
+  },
+  "directionsSummaryDepartAt": "depart {time}",
+  "@directionsSummaryDepartAt": {
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "Oct 19, 08:30"
+      }
+    }
+  },
+  "directionsAlternatives": "Alternatives: {count}",
+  "@directionsAlternatives": {
+    "description": "Maximum number of alternative routes to request.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "directionsAlternativesUnavailable": "Alternatives (not available with stops)",
+  "directionsUseTraffic": "Use live & historic traffic",
+  "directionsDepartNow": "Depart now",
+  "directionsDepartAt": "Depart {time}",
+  "@directionsDepartAt": {
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "Oct 19, 08:30"
+      }
+    }
+  },
+  "directionsNow": "Now",
+  "directionsBest": "Best",
+  "@directionsBest": {
+    "description": "Badge on the recommended route."
+  },
+  "directionsVia": "via {roads}",
+  "@directionsVia": {
+    "placeholders": {
+      "roads": {
+        "type": "String",
+        "example": "Ring Road, 6th October Bridge"
+      }
+    }
+  },
+  "directionsLegsCount": "{count, plural, =1{1 leg} other{{count} legs}}",
+  "@directionsLegsCount": {
+    "description": "A leg is the part of a route between two consecutive stops.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "directionsTolls": "Tolls {amount}",
+  "@directionsTolls": {
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "EGP 10–15"
+      }
+    }
+  },
+  "truckType": "Type",
+  "truckGrossWeight": "Gross weight {value} t",
+  "@truckGrossWeight": {
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "12.0"
+      }
+    }
+  },
+  "truckHeight": "Height {value} m",
+  "@truckHeight": {
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "3.80"
+      }
+    }
+  },
+  "truckWidth": "Width {value} m",
+  "@truckWidth": {
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "2.50"
+      }
+    }
+  },
+  "truckLength": "Length {value} m",
+  "@truckLength": {
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "10.0"
+      }
+    }
+  },
+  "truckAxles": "Axles {count}",
+  "@truckAxles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "isolinesSaved": "Saved \"{name}\" to geofences",
+  "@isolinesSaved": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "isolinesTapHint": "Tap the map to set the starting point",
+  "isolinesChooseStart": "Choose a starting point",
+  "isolinesStartingPoint": "Starting point",
+  "isolinesThreshold": "Threshold",
+  "@isolinesThreshold": {
+    "description": "Section title: limit by travel time or by distance."
+  },
+  "isolinesTime": "Time",
+  "isolinesMaxThresholds": "{max, plural, =1{Up to 1 threshold} other{Up to {max} thresholds}}",
+  "@isolinesMaxThresholds": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "isolinesUseTraffic": "Use traffic",
+  "isolinesReachableAreas": "Reachable areas",
+  "isolinesWithin": "Within {threshold}",
+  "@isolinesWithin": {
+    "placeholders": {
+      "threshold": {
+        "type": "String",
+        "example": "10 min"
+      }
+    }
+  },
+  "isolinesPolygonsCount": "{count, plural, =1{1 polygon} other{{count} polygons}}",
+  "@isolinesPolygonsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "isolinesSaveAsGeofence": "Save as geofence",
+  "isolinesGeofenceName": "{mode} {threshold}",
+  "@isolinesGeofenceName": {
+    "description": "Default name of a geofence saved from a reachable area, e.g. 'Car 10 min'.",
+    "placeholders": {
+      "mode": {
+        "type": "String",
+        "example": "Car"
+      },
+      "threshold": {
+        "type": "String",
+        "example": "10 min"
+      }
+    }
+  },
+  "matrixTapOrigins": "Tap the map to add origins",
+  "matrixTapDestinations": "Tap the map to add destinations",
+  "matrixAddOrigins": "Add origins",
+  "matrixAddDestinations": "Add destinations",
+  "matrixCalculate": "Calculate {origins} × {destinations}",
+  "@matrixCalculate": {
+    "description": "Button: compute the matrix for N origins × M destinations.",
+    "placeholders": {
+      "origins": {
+        "type": "int"
+      },
+      "destinations": {
+        "type": "int"
+      }
+    }
+  },
+  "matrixErrorsCount": "{count, plural, =1{1 error} other{{count} errors}}",
+  "@matrixErrorsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "matrixOrigins": "Origins ({count})",
+  "@matrixOrigins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "matrixDestinations": "Destinations ({count})",
+  "@matrixDestinations": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "matrixAddOrigin": "Add origin",
+  "matrixAddDestination": "Add destination",
+  "optimizeTapStops": "Tap the map to add stops (numbers show visit order)",
+  "optimizeReturnToStart": "Return to start",
+  "optimizeEndAnywhere": "End anywhere (optional)",
+  "optimizeEnd": "End",
+  "@optimizeEnd": {
+    "description": "End point of the tour."
+  },
+  "optimizeRoundTrip": "Round trip",
+  "optimizeStops": "Stops ({count})",
+  "@optimizeStops": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "optimizeStopName": "Stop {number}",
+  "@optimizeStopName": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "optimizeRun": "Optimize order",
+  "optimizeResult": "Optimized order",
+  "optimizeArrive": "arrive {time}",
+  "@optimizeArrive": {
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "08:42:10"
+      }
+    }
+  },
+  "optimizeDepart": "depart {time}",
+  "@optimizeDepart": {
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "08:45:00"
+      }
+    }
+  },
+  "optimizeCouldNotVisit": "Could not visit: {stops}",
+  "@optimizeCouldNotVisit": {
+    "placeholders": {
+      "stops": {
+        "type": "String",
+        "example": "Stop 2, Stop 5"
+      }
+    }
+  },
+  "snapTapHint": "Tap along a road to draw a rough GPS trace",
+  "snapTracePointsCount": "{count, plural, =1{1 trace point} other{{count} trace points}}",
+  "@snapTracePointsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "snapGenerateNoisyTrace": "Generate noisy trace between first & last",
+  "@snapGenerateNoisyTrace": {
+    "description": "Creates a simulated, imprecise GPS trace between the first and last points."
+  },
+  "snapRadius": "Snap radius {meters} m",
+  "@snapRadius": {
+    "placeholders": {
+      "meters": {
+        "type": "String",
+        "example": "50"
+      }
+    }
+  },
+  "snapRun": "Snap to roads",
+  "@snapRun": {
+    "description": "Button that matches the trace to roads."
+  },
+  "snapConfidence": "Confidence {percent}%",
+  "@snapConfidence": {
+    "placeholders": {
+      "percent": {
+        "type": "String",
+        "example": "87"
+      }
+    }
+  },
+  "snapSnappedPoints": "Snapped points",
+  "snapMoved": "moved {distance}",
+  "@snapMoved": {
+    "description": "How far a GPS point was moved onto the road.",
+    "placeholders": {
+      "distance": {
+        "type": "String",
+        "example": "12 m"
+      }
+    }
+  },
+  "geofencesDefaultName": "{shape} {number}",
+  "@geofencesDefaultName": {
+    "description": "Default name for a new geofence, e.g. 'Circle 3'.",
+    "placeholders": {
+      "shape": {
+        "type": "String",
+        "example": "Circle"
+      },
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "geofencesOpenTracker": "Open tracker",
+  "geofencesTapTest": "Tap to test whether a point is inside",
+  "geofencesTapCircle": "Tap to place the circle center",
+  "geofencesTapPolygon": "Tap to add polygon vertices",
+  "geofencesInfo": "Amazon Location geofence collections and trackers need IAM or Cognito credentials (API keys only cover Maps, Places and Routes). This screen stores geofences on the device and evaluates ENTER/EXIT events the same way.",
+  "geofencesToolTest": "Test",
+  "@geofencesToolTest": {
+    "description": "Tool: tap a point to check which geofences contain it."
+  },
+  "geofencesShapeCircle": "Circle",
+  "geofencesShapePolygon": "Polygon",
+  "geofencesOutsideAll": "Point is outside every geofence.",
+  "geofencesInside": "Inside: {names}",
+  "@geofencesInside": {
+    "placeholders": {
+      "names": {
+        "type": "String",
+        "example": "Office, Warehouse"
+      }
+    }
+  },
+  "geofencesVerticesCount": "{count, plural, =1{1 vertex} other{{count} vertices}}",
+  "@geofencesVerticesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "geofencesName": "Name",
+  "geofencesNameHint": "e.g. Office, Warehouse",
+  "geofencesSave": "Save geofence",
+  "geofencesFromIsoline": "Create from a drive-time isoline",
+  "geofencesCount": "{count, plural, =1{1 geofence} other{{count} geofences}}",
+  "@geofencesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "geofencesDeleteAll": "Delete all",
+  "geofencesEmpty": "No geofences yet. Draw one on the map.",
+  "trackerEventEnter": "ENTER",
+  "@trackerEventEnter": {
+    "description": "Event: the device entered a geofence."
+  },
+  "trackerEventExit": "EXIT",
+  "@trackerEventExit": {
+    "description": "Event: the device left a geofence."
+  },
+  "trackerTapStart": "Tap the map to choose the trip start",
+  "trackerTapEnd": "Tap the map to choose the trip end",
+  "trackerReady": "Press Start tracking, or tap to pick a new start",
+  "trackerFollow": "Follow device",
+  "trackerSimulate": "Simulate",
+  "trackerDeviceGps": "Device GPS",
+  "trackerPlaybackSpeed": "Playback speed ×{speed}",
+  "@trackerPlaybackSpeed": {
+    "placeholders": {
+      "speed": {
+        "type": "int"
+      }
+    }
+  },
+  "trackerStop": "Stop",
+  "@trackerStop": {
+    "description": "Button: stop tracking (verb)."
+  },
+  "trackerStart": "Start tracking",
+  "trackerSnapTrail": "Snap trail",
+  "@trackerSnapTrail": {
+    "description": "Button: match the recorded trail to roads."
+  },
+  "trackerFixesCount": "{count, plural, =1{1 fix} other{{count} fixes}}",
+  "@trackerFixesCount": {
+    "description": "Number of GPS position readings received.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trackerLocatingAddress": "Locating address…",
+  "trackerGeofences": "Geofences ({count})",
+  "@trackerGeofences": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trackerInsideCount": "inside {count}",
+  "@trackerInsideCount": {
+    "description": "Number of geofences the device is currently inside.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trackerNoGeofences": "No geofences saved. Create some on the Geofences screen to get ENTER/EXIT events here.",
+  "trackerEvents": "Events ({count})",
+  "@trackerEvents": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unitMeters": "{value} m",
+  "@unitMeters": {
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "250"
+      }
+    }
+  },
+  "unitKilometers": "{value} km",
+  "@unitKilometers": {
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "3.5"
+      }
+    }
+  },
+  "unitFeet": "{value} ft",
+  "@unitFeet": {
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "300"
+      }
+    }
+  },
+  "unitMiles": "{value} mi",
+  "@unitMiles": {
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "2.1"
+      }
+    }
+  },
+  "unitKmh": "{value} km/h",
+  "@unitKmh": {
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "42.0"
+      }
+    }
+  },
+  "unitMph": "{value} mph",
+  "@unitMph": {
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "26.1"
+      }
+    }
+  },
+  "unitSeconds": "{count, plural, other{{count} s}}",
+  "@unitSeconds": {
+    "description": "Compact duration in seconds.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unitMinutes": "{count, plural, other{{count} min}}",
+  "@unitMinutes": {
+    "description": "Compact duration in minutes.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unitHours": "{count, plural, other{{count} h}}",
+  "@unitHours": {
+    "description": "Compact duration in hours.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unitHoursMinutes": "{hours} {minutes}",
+  "@unitHoursMinutes": {
+    "description": "Joins an hours part and a minutes part, e.g. '2 h 15 min'.",
+    "placeholders": {
+      "hours": {
+        "type": "String",
+        "example": "2 h"
+      },
+      "minutes": {
+        "type": "String",
+        "example": "15 min"
+      }
+    }
+  },
+  "dateTimeShort": "{date}, {time}",
+  "@dateTimeShort": {
+    "description": "Joins a short date and a time, e.g. 'Oct 19, 08:30'.",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "Oct 19"
+      },
+      "time": {
+        "type": "String",
+        "example": "08:30"
+      }
+    }
+  },
+  "commonRange": "{from}–{to}",
+  "@commonRange": {
+    "description": "A value range, e.g. a toll estimate 'E£10.00–E£15.00'.",
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "errorCredentialsRejected": "The AWS credentials were rejected ({status}): {detail} Check the identity pool role's permissions.",
+  "@errorCredentialsRejected": {
+    "description": "{status} is the HTTP status (401/403); {detail} is the English message returned by AWS.",
+    "placeholders": {
+      "status": {
+        "type": "int",
+        "example": "403"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorTrackerConfigIncomplete": "Enter an identity pool ID and a tracker name.",
+  "errorIdentityPoolIdInvalid": "The identity pool ID should look like region:uuid.",
+  "@errorIdentityPoolIdInvalid": {
+    "description": "'region:uuid' describes the ID format and stays in English."
+  },
+  "errorTrackerNotConfigured": "Connect to the tracker first.",
+  "errorBackgroundTrackingUnsupported": "Background tracking isn't available on this platform.",
+  "errorCognitoSignInFailed": "Cognito sign-in failed: {detail}",
+  "@errorCognitoSignInFailed": {
+    "description": "{detail} is the English message returned by AWS.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorTrackingPlatform": "Tracking error: {detail}",
+  "@errorTrackingPlatform": {
+    "description": "{detail} is a technical error text from the tracking SDK, in English.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorCloudTrackerSettingsNotSaved": "Could not save the tracker settings.",
+  "cloudTrackingTitle": "Cloud tracking",
+  "@cloudTrackingTitle": {
+    "description": "Title of the screen that sends device positions to an Amazon Location tracker resource in AWS."
+  },
+  "homeCloudTrackingDescription": "Send device positions to an Amazon Location tracker with the Amazon Location Mobile SDKs, in the foreground or background.",
+  "cloudTrackingSetupTitle": "Tracker",
+  "@cloudTrackingSetupTitle": {
+    "description": "Section with the identity pool and tracker settings."
+  },
+  "cloudTrackingIdentityPool": "Cognito identity pool ID",
+  "cloudTrackingTrackerName": "Tracker name",
+  "cloudTrackingSetupHelp": "Trackers don't accept API keys. Positions are signed with credentials from a Cognito identity pool whose unauthenticated role allows geo:BatchUpdateDevicePosition, geo:GetDevicePosition and geo:GetDevicePositionHistory on the tracker.",
+  "@cloudTrackingSetupHelp": {
+    "description": "The geo:... action names are AWS IAM permissions and are never translated."
+  },
+  "cloudTrackingTimeFilter": "Time filter",
+  "cloudTrackingTimeFilterValue": "{seconds, plural, =1{At least 1 second apart} other{At least {seconds} seconds apart}}",
+  "@cloudTrackingTimeFilterValue": {
+    "description": "Minimum time between two uploaded positions.",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudTrackingDistanceFilter": "Distance filter",
+  "cloudTrackingDistanceFilterValue": "At least {distance} apart",
+  "@cloudTrackingDistanceFilterValue": {
+    "description": "Minimum distance between two uploaded positions; {distance} is formatted, e.g. '30 m'.",
+    "placeholders": {
+      "distance": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudTrackingAccuracyFilter": "Accuracy filter",
+  "cloudTrackingAccuracyFilterHint": "Skip moves smaller than the position's accuracy",
+  "cloudTrackingConnect": "Connect",
+  "@cloudTrackingConnect": {
+    "description": "Button that signs in to the identity pool and prepares the tracker."
+  },
+  "cloudTrackingNotConnected": "Not connected",
+  "cloudTrackingConnected": "Connected · device {deviceId}",
+  "@cloudTrackingConnected": {
+    "description": "{deviceId} is the ID positions are reported under.",
+    "placeholders": {
+      "deviceId": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudTrackingStatusTracking": "Sending positions",
+  "cloudTrackingStatusBackground": "Sending positions in the background",
+  "cloudTrackingBackground": "Background tracking",
+  "cloudTrackingBackgroundActive": "Active",
+  "@cloudTrackingBackgroundActive": {
+    "description": "Background tracking mode with continuous updates."
+  },
+  "cloudTrackingBackgroundBatterySaver": "Battery saver",
+  "@cloudTrackingBackgroundBatterySaver": {
+    "description": "Background tracking mode with infrequent updates."
+  },
+  "cloudTrackingBackgroundStart": "Start in background",
+  "cloudTrackingBackgroundStop": "Stop background",
+  "cloudTrackingBackgroundHelp": "Android shows a notification while it runs; battery saver uploads about every 15 minutes. iOS needs the Always location permission.",
+  "cloudTrackingBackgroundWeb": "Background tracking isn't available in the browser.",
+  "cloudTrackingReadBack": "Read back from the tracker",
+  "cloudTrackingLatest": "Latest position",
+  "cloudTrackingHistory": "Last 24 hours",
+  "cloudTrackingLatestValue": "Stored {time}",
+  "@cloudTrackingLatestValue": {
+    "description": "When the tracker stored the latest position; {time} is a formatted date and time.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudTrackingNoPosition": "The tracker has no position for this device yet.",
+  "cloudTrackingHistoryCount": "{count, plural, =0{No positions in the last 24 hours} =1{1 position in the last 24 hours} other{{count} positions in the last 24 hours}}",
+  "@cloudTrackingHistoryCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudTrackingReceived": "{count, plural, =1{1 received} other{{count} received}}",
+  "@cloudTrackingReceived": {
+    "description": "Positions received from the device.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudTrackingUploaded": "{count, plural, =1{1 uploaded} other{{count} uploaded}}",
+  "@cloudTrackingUploaded": {
+    "description": "Positions stored by the tracker.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudTrackingSkipped": "{count, plural, =1{1 filtered} other{{count} filtered}}",
+  "@cloudTrackingSkipped": {
+    "description": "Positions dropped by the time, distance or accuracy filter.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudTrackingErrors": "{count, plural, =1{1 error} other{{count} errors}}",
+  "@cloudTrackingErrors": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudTrackingEventPosition": "Position received",
+  "cloudTrackingEventUploadStarted": "{count, plural, =1{Uploading 1 position} other{Uploading {count} positions}}",
+  "@cloudTrackingEventUploadStarted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudTrackingEventUploaded": "{count, plural, =1{Uploaded 1 position} other{Uploaded {count} positions}}",
+  "@cloudTrackingEventUploaded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudTrackingEventSkipped": "Filtered out",
+  "cloudTrackingEventAvailable": "Location available",
+  "cloudTrackingEventUnavailable": "Location unavailable",
+  "cloudTrackingEventBackgroundStopped": "Background tracking stopped",
+  "cloudTrackingEventError": "Error: {message}",
+  "@cloudTrackingEventError": {
+    "description": "{message} is a technical error text, in English.",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudTrackingLegendReceived": "Received",
+  "cloudTrackingLegendUploaded": "Uploaded",
+  "cloudTrackingLegendHistory": "Stored history"
+}
