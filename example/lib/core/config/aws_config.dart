@@ -2,13 +2,12 @@ import 'package:aws_location_service_features/aws_location_service_features.dart
 
 /// Static defaults for the Amazon Location Service connection.
 ///
-/// The API key and region can be overridden at build time:
+/// No API key ships with the example. Pass yours at build time:
 /// `flutter run --dart-define=AWS_LOCATION_API_KEY=... --dart-define=AWS_LOCATION_REGION=...`
-/// and at runtime from the Settings screen.
+/// or enter it on the Settings screen (saved on the device).
 abstract final class AwsConfig {
   static const String defaultApiKey = String.fromEnvironment(
     'AWS_LOCATION_API_KEY',
-    defaultValue: 'v1.public.eyJqdGkiOiJlYTcwNGM2My1jYzhiLTQ3MTctYmFhZi03ZTYzYmZkOTUzZmYifaHLpmEIevY48gog3Qwmhb9gZJxVdVhcMfv27BnYjWAt4aB7gqlFCMutLW9-ActYbgllsDVLhRY_1OaYdNyADFLCLLduXFFZzPBawKpS6jJ0JQtUFufJNssY0fQ2hcpbHxGM76IhJVfMeiWD_qy8265ybBfY_D_wRCHDGt-SISi4NIKztFulLU_wPbayiRoJI7wuAS9JBgOg3yhyw-cvl646jQTVikVY6CKYrvPfDSn7_hpaO6Hd2VIVwFXw0ACdn4FsrsJ_wR7NyYeMAndQh16GwOkG4onEtL9V2fTMREGkDjphVZoaYX5pkuczkXL2OOIrM4Y5Ng-I2JwUMS1gzXk.N2IyNTQ2ODQtOWE1YS00MmI2LTkyOTItMGJlNGMxODU1Mzc2',
   );
 
   static const String defaultRegion = String.fromEnvironment(

@@ -1,11 +1,15 @@
 name: aws_location_service_features
 description: >-
-  Amazon Location Service for Flutter: Maps, Places and Routes (v2) with an
-  API key, a MapLibre map widget, on-device geofencing, and device tracking to
-  Amazon Location trackers through the Amazon Location Mobile SDKs (Android,
-  iOS) and a Dart implementation on the web.
+  Amazon Location Service for Flutter: maps, places, routes, geofencing and
+  device tracking (Amazon Location Mobile SDKs on Android and iOS, Dart on web).
 version: 0.1.0
-publish_to: none
+repository: https://github.com/abdalmuneim/aws_location_service_features_plugin
+issue_tracker: https://github.com/abdalmuneim/aws_location_service_features_plugin/issues
+
+# AWS's published SigV4 example credentials (AKIDEXAMPLE /
+# wJalrXUtnFEMI/K7MDENG+bPxRfiCYEXAMPLEKEY), used as signing test vectors.
+false_secrets:
+  - /test/sigv4_signer_test.dart
 
 environment:
   sdk: ^3.13.4

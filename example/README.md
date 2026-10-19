@@ -37,16 +37,17 @@ flutter run -d chrome          # web
 flutter run                    # connected Android/iOS device
 ```
 
-The API key and region default to the values in
-[lib/core/config/aws_config.dart](lib/core/config/aws_config.dart). Override
-them at build time without editing code:
+No API key ships with the example. Create one in the Amazon Location console
+(allow the Maps, Places and Routes actions) and pass it at build time:
 
 ```bash
 flutter run --dart-define=AWS_LOCATION_API_KEY=v1.public... --dart-define=AWS_LOCATION_REGION=eu-north-1
 ```
 
-or at runtime in **Settings** (saved on the device). Settings also holds the
-results language, political view, units, theme and map style.
+or enter it at runtime in **Settings** (saved on the device). The region
+defaults to `eu-north-1` ([lib/core/config/aws_config.dart](lib/core/config/aws_config.dart)).
+Settings also holds the results language, political view, units, theme and
+map style.
 
 Cloud tracking needs a Cognito identity pool and a tracker (see the
 [plugin README](../README.md#aws-setup)). Enter them on the Cloud tracking
